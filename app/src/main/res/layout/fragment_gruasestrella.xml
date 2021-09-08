@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gruasestrella">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Registro"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:background="@color/fondo">
+
+            <ImageView
+                android:id="@+id/imglogo"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="right"
+                android:transitionName="imgregistroTrans"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <TextView
+                android:id="@+id/lblwelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_bold"
+                android:text="Grúas Estrella"
+                android:layout_marginTop="15dp"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorletras1"
+                />
+            <TextView
+                android:id="@+id/txtregistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_bold"
+                android:text="Ofrecemos el mejor servicio para tu auto"
+                android:layout_marginTop="20dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorletras2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+                //SERVICIOS
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnsolicitarserv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/advent_pro_bold"
+                    android:text="Solicitar Servicio" />
+                <TextView
+                    android:id="@+id/txtnumero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/advent_pro_bold"
+                    android:text="NUMERO:     +52 5538924729"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorletras2" />
+                <TextView
+                    android:id="@+id/txtnom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/advent_pro_bold"
+                    android:text="Nombre del trabajador: Turriza Rodriguez Ian"
+                    android:layout_marginTop="10dp"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorletras2" />
+
+                <ImageView
+                    android:id="@+id/imguser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:transitionName="imgregistroTrans"
+                    app:srcCompat="@drawable/ianmeca" />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            //LAYOUTFINAL
+        </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

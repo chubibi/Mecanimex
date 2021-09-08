@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@color/fondo">
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/mecanico"
+        android:transitionName="imgregistroTrans"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:id="@+id/lblwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/advent_pro_bold"
+        android:text="Bienvenido..."
+        android:layout_marginTop="15dp"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorletras1"
+        android:transitionName="BienvenidoTrans"/>
+    <TextView
+        android:id="@+id/txtregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/advent_pro_bold"
+        android:text="Registrate para vivir la experiencia de mecánimex"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorletras2"
+        android:transitionName="RegTrans"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputnombre"
+            android:hint="Nombre Completo"
+            android:textColorHint="@color/colorletras4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_bold"
+                android:textColor="@color/colorletras2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //EMAIL
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputemail"
+            android:hint="Email o Correo"
+            android:transitionName="emailTrans"
+            android:textColorHint="@color/colorletras4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_bold"
+                android:textColor="@color/colorletras2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        //CONTRASEÑA
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputpass"
+            android:hint="Contraseña o Password"
+            android:transitionName="passTrans"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="@color/colorletras4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_bold"
+                android:inputType="textPassword"
+                android:textColor="@color/colorletras2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        //CONFIRM
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputconfpass"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar Contraseña"
+            android:textColorHint="@color/colorletras4"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_bold"
+                android:inputType="textPassword"
+                android:textColor="@color/colorletras2" />
+        </com.google.android.material.textfield.TextInputLayout>
+        //TELEFONO
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputtelefono"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefono o Cellphone"
+            android:textColorHint="@color/colorletras4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_bold"
+                android:inputType="number"
+                android:textColor="@color/colorletras2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnregistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/advent_pro_bold"
+            android:onClick="registro"
+            android:text="Registrar"
+            android:transitionName="btnregistroTrans" />
+        <TextView
+            android:id="@+id/textoyatienescuenta"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorletras4"
+            android:fontFamily="@font/advent_pro_bold"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:textStyle="bold"
+            android:text="¿Ya tienes una cuenta? Inicia Sesión"
+            android:transitionName="userTrans"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+//LAYOUTFINAL
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5722</color>
+    <color name="colorPrimaryDark">#222831</color>
+    <color name="colorAccent">#D81B60</color>
+
+    //COLOR DE LETRAS LOGIN
+
+    <color name="colorletras">#222831</color>
+    <color name="colorletras1">#ff5722</color>
+    <color name="colorletras2">#FFFFFF</color>
+    <color name="colorletras4">#9aedf4</color>
+    <color name="colorletras5">#818181</color>
+    <color name="colorletras6">#000000</color>
+
+    //BACKGROUND
+    <color name="fondo">#222831</color>
+
+</resources>

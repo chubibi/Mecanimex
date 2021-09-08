@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Mecanimex</string>
+    <string name="titulohome">MECÁNIMEX</string>
+    <string name="textinicio">Bienvenido a Mecánimex</string>
+    <string name="lbllogin">Inicia sesión para continuar</string>
+    <string name="inputcorreo">Email o Correo</string>
+    <string name="inputpass">Password o Contraseña</string>
+    <string name="lblolvidar">¿Olvidaste tu Contraseña?</string>
+    <string name="btninicio">Iniciar Sesión</string>
+    <string name="lblregistro">¿No tienes cuenta?, ¡Registrate ahora!</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="nav_header_title">Bienvenido a Mecánimex</string>
+    <string name="nav_header_subtitle">josue.cazares.10@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurar Perfil</string>
+
+    <string name="menu_home">Mecánimex</string>
+    <string name="menu_gallery">Mis servicios</string>
+    <string name="menu_slideshow">Manual Básico</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_miubi">Map</string>
+
+</resources>
