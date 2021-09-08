@@ -40,6 +40,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 public class Login <Private> extends AppCompatActivity {
 
+    //PRUEBA BRANCH DAVID
     TextView lblbienvenido, lblnota, lblregistro;
     ImageView imglogoTrans;
     private TextInputLayout lblusuario, lblpassword;
